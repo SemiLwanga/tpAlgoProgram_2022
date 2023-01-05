@@ -1,0 +1,22 @@
+Reponse 6: Nous avons développé 5 classes, 
+	     Exactement que ce nombre est le minimum possible car en vue de reduire le nombre,
+	     Nous avons jugé bon d'utiliser la methode de classe pour les classes Carré et Triangle rectangle
+
+
+Reponse 8: En dehors de l'heritage, le concept du polymorphisme pourrait etre utilisé pour realiser le projet
+
+
+Reponse 9: En évaluant le temps d'éxecution de nos deux implementations,
+           On trouve qu'elle est constante, pour dire que
+           quel que soit le nombre des valeurs en entrée, le temps d'exécution reste inchangé
+           - Sous la notation asymptotique: O(1)  
+
+Reponse 10: S'il faut que nous choisissons entre les deux solutions, 
+            vu qu'elles ont le même temps d'exécution, notre choix se portera sans doute
+            sur l'usage du polymorphisme car il simplifie la tâche
+
+
+
+Membres du groupe : SEMIKENKE LWANGA DEOGRATIAS   (2GC)
+                    IKINDA BALOMBO CHADRACK       (2GC)
+                    MBALA KABENGELA Mike          (2GC)
