@@ -50,7 +50,7 @@ class Rectangle(Formes_Geometrique):
             print(f"    La surface du rectangle vaut: {self.surface()} m²\n\n")
         
         else:
-            print(f"Pour le rectangle de longueur L={self.L} m et largeur l={self.l} m :")
+            print(f"Pour le rectangle de longueur L = {self.L} m et largeur l = {self.l} m :")
             print(f"    Le perimètre du rectangle vaut: {self.perimetre()} m")
             print(f"    La surface du rectangle vaut: {self.surface()} m²\n\n")
         
@@ -75,7 +75,7 @@ class Cercle(Formes_Geometrique):
         return "{:.3f}".format(pi*(self.r)**2)
 
     def result_cercle(self):
-        print(f"\n\nPour le cercle de rayon R ={self.r} m")
+        print(f"\n\nPour le cercle de rayon R = {self.r} m")
         print(f"    Le perimètre du celcle vaut: {self.perimetre()} m")
         print(f"    La surface du celcle vaut: {self.surface()} m²\n\n")
         
@@ -102,11 +102,11 @@ class Triangle(Formes_Geometrique):
     
     def result_triangle(self):
         if (self.c == sqrt((self.a)**2 + (self.b)**2)):
-            print(f"Pour le triangle rectangle de hauteur a={self.a}m et de base b={self.b}m :")
+            print(f"Pour le triangle rectangle de hauteur a = {self.a} m et de base b = {self.b} m :")
             print("    Le perimètre du triangle vaut: {:.3f} m".format(self.perimetre()))
             print("    La surface du triangle vaut: {} m²\n\n".format(self.surface()))
         else:
-            print(f"Pour le triangle des côtés a={self.a}m, b={self.b}m et c={self.c}m:")
+            print(f"Pour le triangle des côtés a = {self.a} m, b = {self.b} m et c = {self.c} m:")
             print("    Le perimètre du triangle vaut: {:.3f} m".format(self.perimetre()))
             print(f"    La surface du triangle vaut: {self.surface()} m²\n\n")
 
@@ -127,29 +127,32 @@ class Forme_exploitateur:
         rectangle = Rectangle(self.longueur, self.largeur)
         return rectangle.perimetre()
     
+
+
 if __name__=='__main__' :
-    
+
+    #Cercle
     cerc = Cercle(24)
     cerc.result_cercle()
 
+    #Rectangle
     rect = Rectangle(12, 25)
     rect.result_rectangle()
 
+    #Triangle quelconque
     tri = Triangle(7, 15, 20)
     tri.result_triangle()
 
-
+    #Carré
     carre = Rectangle.Carre(15)
     carre.result_rectangle()
 
-
+    #Triangle rectangle
     triRect = Triangle.Rectangle(32,18)
     triRect.result_triangle() 
 
+    #Rectangle avec la classe exploitateur
     demo_1 = Forme_exploitateur(15, 5)
     print("Pour la demonstraction de la classe qui exploite la classe rectangle, on a:")
     print(f"    Le perimetre vaut : {demo_1.perimetre_rectangle()} m")
     print(f"    La surface vaut: {demo_1.surface_rectangle()} m²")
-
-
-   
