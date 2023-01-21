@@ -63,7 +63,10 @@ class Cercle(Formes_Geometrique):
              self.r= abs(rayon)
 
     def perimetre(self):
-        return "{:.3f}".format(2*pi*self.r)
+        #return "{:.3f}".format(2*pi*self.r)
+        return 2*pi*self.r
+
+        
     
     def surface(self):        
         return "{:.3f}".format(pi*(self.r)**2)

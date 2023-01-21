@@ -69,10 +69,10 @@ class Cercle(Formes_Geometrique):
              self.r= abs(rayon)
 
     def perimetre(self):
-        return "{:.3f}".format(2*pi*self.r)
+        return 2*pi*self.r
     
     def surface(self):        
-        return "{:.3f}".format(pi*(self.r)**2)
+        return pi*(self.r)**2
 
     def result_cercle(self):
         print(f"\n\nPour le cercle de rayon R = {self.r} m")
@@ -98,7 +98,7 @@ class Triangle(Formes_Geometrique):
     def surface(self):
         dem_p = (self.a+self.b+self.c)/2
         surface = sqrt(abs(dem_p*(dem_p-self.a)*(dem_p-self.b)*(dem_p-self.c)))
-        return "{:.3f}".format(surface)
+        return surface
     
     def result_triangle(self):
         if (self.c == sqrt((self.a)**2 + (self.b)**2)):
@@ -128,11 +128,10 @@ class Forme_exploitateur:
         return rectangle.perimetre()
     
 
-
 if __name__=='__main__' :
 
     #Cercle
-    cerc = Cercle(24)
+    cerc = Cercle(-24)
     cerc.result_cercle()
 
     #Rectangle
@@ -156,3 +155,4 @@ if __name__=='__main__' :
     print("Pour la demonstraction de la classe qui exploite la classe rectangle, on a:")
     print(f"    Le perimetre vaut : {demo_1.perimetre_rectangle()} m")
     print(f"    La surface vaut: {demo_1.surface_rectangle()} m²")
+
