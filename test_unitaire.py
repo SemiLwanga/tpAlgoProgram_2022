@@ -58,3 +58,18 @@ class Testing(unittest.TestCase):
         result = 6
         self.assertEqual(tri, result)
 
+    
+    
+    # Classe Cercle
+    def test_perimetre_cercle(self):
+        cer = Cercle(5).perimetre()
+        result = 31.41592653589793
+        self.assertAlmostEqual(cer, result)
+
+    def test_surface_cercle(self):
+        cer = Cercle(5).surface()
+        result = 78.53981633974483
+        self.assertAlmostEqual(cer, result)
+
+if __name__ == '__main__':
+    unittest.main()
