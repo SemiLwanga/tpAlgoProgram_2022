@@ -35,3 +35,26 @@ class Testing(unittest.TestCase):
         car = Rectangle.Carre(-5).surface()
         result = 25
         self.assertEqual(car, result)
+    
+     # Classe Triangle
+    def test_perimetre_triangle(self):
+        tri = Triangle(-2,5,4).perimetre()
+        result = 11
+        self.assertEqual(tri, result)
+
+    def test_surface_triangle(self):
+        tri = Triangle(-2,5,4).surface()
+        result = 3.799671038392666
+        self.assertAlmostEqual(tri, result)
+
+    # ClassMethode Triangle rectangle
+    def test_perimetre_triangle_rectangle(self):
+        tri = Triangle.Rectangle(3, 4).perimetre()
+        result = 12
+        self.assertEqual(tri, result)
+
+    def test_surface_triangle_rectangle(self):
+        tri = Triangle.Rectangle(3, 4).surface()
+        result = 6
+        self.assertEqual(tri, result)
+
